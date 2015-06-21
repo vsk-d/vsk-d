@@ -1,5 +1,21 @@
-# first_homework
-git clone https://github.com/vsk-d/first_homework
-npm i
-bower i
-gulp
+> Backend часть
+
+Для установки проекта необходимо выполнить следующий порядок действий:
+
+1. Открыть консоль
+2. Выполнить команду - bower install
+3. Выполнить команду - composer install
+4. Импортировать данные в БД с помощь дамп-файла portfolio.sql
+5. В файле config.php изменить настройки подключения к БД на свои
+6. Логин и пароль для входа в режим администратора<br />
+   **login** - admin<br />
+   **password** - admin<br />
+   
+> Google Recaptcha
+
+* Для работы Google Recaptcha необходимо перейти на [официальный сайт](href=https://www.google.com/recaptcha/intro/index.html) 
+и зарегистрировать свой сайт
+* При регистрации вам будут выданы публичный и приватный ключи, которые необходимо вставить в файл config.php<br />
+
+    define('SECRET_KEY', **'ваш закрытый ключ'**);<br />
+    define('PUBLIC_KEY', **'ваш публичный ключ'**);
