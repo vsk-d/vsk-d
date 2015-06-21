@@ -1,6 +1,23 @@
 {
-  "name": "dz",
+  "name": "dz1_dima",
   "dependencies": {
-    "jquery": "1.11"
+    "jquery": "1.11",
+    "normalize.css": "~3.0.3",
+    "bpopup": "~0.11.0",
+    "modernizer": "~2.8.2",
+    "jquery-placeholder": "~2.1.1",
+    "qtip2": "~2.2.1",
+    "jquery-file-upload": "~9.10.1"
+  },
+  "overrides": {
+    "qtip2": {
+      "main": [
+        "./jquery.qtip.js",
+        "./jquery.qtip.css"
+      ],
+      "dependencies": {
+        "jquery": ">=1.6.0"
+      }
+    }
   }
 }
