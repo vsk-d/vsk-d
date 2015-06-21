@@ -6,7 +6,7 @@ require_once 'phplibs/phpmailer/phpmailer/language/phpmailer.lang-ru.php';
 // константы для хранения подключения к БД
 define('HOST', 'localhost');
 define('USER', 'root');
-define('DBNAME', 'vsk');
+define('DBNAME', 'darkone_vsk');
 define('PASSWORD', '');
 define('SECRET_KEY', '6LdToQgTAAAAABBnE9HPgqXNjEy1ykBAMoxCMrE1');
 define('PUBLIC_KEY', '6LdToQgTAAAAAPx6zLlJTEm9sas4vf0I7-5jfWxg');
