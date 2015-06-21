@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+
+<html lang="ru-Ru">
+<head>
+	<meta charset="UTF-8">
+	<title>first_lesson</title>
+	<!-- SEO -->
+	<meta name="description" content="first homework at loftschool">
+	<meta name="keywords" content="homework, loftschool, домашнее задание, выпускной проект">
+	<meta name="author" content="Kurochkin Viktor Sergeevich">
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/fonts.css">
+	<link rel="stylesheet" type="text/css" href="css/about.css">
+	<link rel="stylesheet" type="text/css" href="css/portfolio.css">
+	<link rel="stylesheet" type="text/css" href="css/popup-style.css">
+	<link rel="stylesheet" type="text/css" href="css/form-style.css">	
+			<link rel="stylesheet" type="text/css" href="css/contact-me.css">
+	<link rel="stylesheet" type="text/css" href="bower/q-tip2/jquery.qtip.css">
+	<!-- JS -->
+	<script src="js/modernizr.js"></script>
+	<script type="text/javascript" src="bower/jquery/dist/jquery.js"></script>
+	<!-- favicon -->
+	<link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+<!--[if lt IE 7]>
+	<p class="browsehappy">Ваш браузер <strong>устарел</strong>. Пожалуйста <a href="http://browsehappy.com">обновите</a> его.</p>
+<![endif]-->
+
+<!--Главный блок-->
+
+<div class="wrapper clearfix">
+	 <div class="main-content">
+<!--Шапка-->
+	<header class="page_header">
+		<div class="container-big">
+			<a href="/" class="header-logo-link">     
+                        <img src="img/logo.png" alt="logo" class="logo-img"> 
+                        <span class="header-logo-text">Сайт портфолио</span> 
+                        </a> 
+                    <ul class="socials">
+                        <li class="socials-item">
+                            <a href="https://vk.com/id22662543" target="_blank" class="socials-link vk">Вконтакте</a>
+                        </li>
+                        <li class="socials-item">
+                            <a href="https://twitter.com/loft_blog" target="_blank" class="socials-link tw">Twitter</a>
+                        </li>
+                        <li class="socials-item">
+                            <a href="https://ru-ru.facebook.com/loftblog" target="_blank" class="socials-link fb">Facebook</a>
+                        </li>
+                        <li class="socials-item">
+                            <a href="https://github.com/vsk-d/" target="_blank" class="socials-link gt">Github</a>
+                        </li>
+                    </ul>
+		</div>
+	</header>
+
+<!--Шапка-end-->
+
+<!--Основной контент-->
+	<div class="container clearfix">
+		<!--Неизменяемый контент - слева-->
+		<aside div class="sidebar">
+			<!--Навигация-->
+			<nav class="navigation">
+				<ul class="navigation-list">
+					<li class="navigation-item">
+						<a class="navigation-link" href="/index.html">Обо мне</a>
+					</li>
+					<li class="navigation-item">
+						<a class="navigation-link" href="/portfolio.html">Мои работы</a>
+					</li>
+					<li class="navigation-item current">
+						<a class="navigation-link" href="/">Связаться со мной</a>
+					</li>
+				</ul>
+			<!--Навигация - end-->
+			</nav>
+			<!--Контакты-->
+			<address class="contacts">
+				<div class="contacts-header">
+				<span class="header-inner-text">Контакты</span>
+				</div>
+				<ul class="contacts-list">
+					<li class="contacts-item contacts-item-mail">
+						<a class="contacts-link" href="mailto:darkinmail@rambler.ru"><span class="contacts-text">darkinmail@rambler.ru</span></a>
+					</li>
+					<li class="contacts-item contacts-item-phone">
+						<a class="contacts-link" href="tel:+79161503993"><span class="contacts-text">+79161503993</span></a>
+					</li>
+					<li class="contacts-item contacts-item-skype">
+						<a class="contacts-link" href="scype:dark_tf8"><span class="contacts-text">dark_tf8</span></a>
+					</li>
+				</ul>
+
+			</address>
+	
+		</aside>
+		<!--Изменяемый контент - справа-->
+		  <div class="variable-content">
+				<!--Основная информация-->
+				<section class="aboutbox">
+ 					<!-- форма обратной	 связи -->
+	<div id="form-feedback">
+		<div class="feedback-wrap">
+			<div class="feedback-head">
+					<span class="feedback-titul">У вас интересный проект? Напишите мне</span>
+			</div>
+			<div class="feedback-body">
+				<form class="form" enctype="multipart/form-data" id="form" method="post">
+							<!-- Вывод сообщений с сервера -->
+				<div class="server-mes error-mes"></div>
+				<div class="server-mes success-mes"></div>
+					<div class="input-wrapper clearfix">
+						<!-- Имя -->
+						<div class="form-input-txt pull-left">
+							<label for="userName" class="form-input-header">Имя</label>
+							<input class="form-input" type="text" name="userName" placeholder="Как к Вам обращаться" id="userName" qtip-content="Вы не ввели имя"/>
+						</div>
+						<!-- Почта -->
+						<div class="form-input-txt pull-right">
+							<label for="usermail" class="form-input-header">Email</label>
+							<input class="form-input" type="text" name="usermail" placeholder="Куда мне писать" id="usermail" qtip-position="right" qtip-content="Вы не ввели Email"/>
+						</div>
+					</div>
+		<!-- Описание проекта -->
+		<div class="form-input-txt">
+			<label for="projectDesk" class="form-input-header">Сообщение</label>
+			<textarea type="text" name="projectDesk" rows="3" class="textarea" placeholder="Кратко, в чем суть..." qtip-content="Что вы от меня хотите?"></textarea>		
+		</div>
+			<!-- Капча -->
+			<div class="form-input-txt captcha-wrap clearfix">
+            	<label for="captcha" class="form-input-header">Введите код, указанный на картинке</label>
+					<img src="img/bg_captcha_03.png" alt="код" class="captcha pull-left"/>
+						<input type="text" name="captcha" class="form-input input-captcha pull-right" id="captcha" placeholder="Введите код" qtip-position="right" qtip-content="Вы не ввели код">
+            </div>
+				<div class="btn-wrap">
+						<button type="submit" class="s-button">Отправить</button>
+						<button type="reset" class="r-button">Очистить</button>
+				</div>
+				</form>
+			</div>
+		</div>
+	</div>
+				<!--Основная информация - end-->
+				</section>
+					
+
+		<!--Изменяемый контент - справа - end-->
+
+		</div>
+		<!--Основной контент - end-->
+	</div>
+</div>
+</div>
+
+<!--Подвал-->
+
+ <footer class="page-footer">
+        <div class="container">
+            <div class="lock">
+                <a href="/login.html" class="lock-inner"><span class="lock-inner-txt">Войти<</span></a>
+            </div>
+            <div class="copyright">© 2015, Это мой сайт, пожалуйста, не копируйте и не воруйте его</div>
+        </div>
+    </footer>
+<!--Подвал-end-->
+
+<!--Главный блок - end-->
+
+
+<!-- uplink plugins JS -->
+<script type="text/javascript" src="bower/q-tip2/jquery.min.js"></script>
+<script type="text/javascript" src="bower/q-tip2/jquery.qtip.js"></script>
+<script type="text/javascript" src="bower/bpopup/jquery.bpopup.js"></script>
+<script type="text/javascript" src="bower/js-placeholder/jquery.placeholder.js"></script>
+
+<!-- JS -->
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/validation.js"></script>
+    <script src="js/contact_me.js"></script>
+</body>

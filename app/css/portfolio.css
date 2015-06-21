@@ -1,0 +1,141 @@
+/*стили для уже загруженных проектов*/
+
+.works-wrapper {
+	margin: 0 20px;
+  margin-right: -25px;
+
+
+}
+.works-wrapper .works-list {
+	padding: 0;
+	margin: 0 auto;
+}
+
+
+.works-list .works-item {
+	width: 179px;
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+	margin-right: 31px;
+	margin-bottom: 38px;
+}
+
+.works-item .hover-img {
+	width: 100%;
+	height: 125px;
+	border-radius: 4px;
+	margin-bottom: 3px;
+}
+.works-item .works-img {
+	box-sizing: border-box;
+	border-radius: 4px;
+	width: 100%;
+	height: 100%;
+	border: 2px solid #3ba8c0;
+	-webkit-box-sizing: border-box; 
+	-moz-box-sizing: border-box; 
+}
+
+/*эффект Hover*/
+
+.works-item:hover .works-img {
+	-moz-opacity: 0.20; 
+	opacity:.20; 
+	filter: alpha(opacity=20);
+	filter:progid:DXImageTransform.Microsoft.Alpha(opacity=20); 
+}
+.works-item:hover .hover-img {
+	background-color: rgb(1, 108, 164);
+}
+.works-item .zoom {
+	position: absolute;
+	width: 100%;
+	top: 55px;
+	text-align: center;
+	transform: scale(0);
+	-webkit-transform: scale(0);
+	-moz-transform: scale(0);
+	-ms-transform: scale(0);
+	transition: all 0.7s ease-in-out;
+	-webkit-transition: all 0.7s ease-in-out;
+	-moz-transition: all 0.7s ease-in-out;
+	-ms-transition: all 0.7s ease-in-out;
+}
+
+
+.works-item:hover .zoom-link {
+	font-family: 'fira_sansbook';
+	font-size: 12px;
+	border: 2px solid white;
+	color: white;
+	text-decoration: none;
+	border-radius: 5px;
+	padding: 0 4px;
+	visibility: visible;
+}
+.works-item:hover .zoom {
+	transform: scale(1);
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-ms-transform: scale(1);
+}
+.works-item .zoom-link {visibility: hidden;}
+.works-item .work-link {
+	color: #3ba8c0;
+	font-family: 'fira_sanslight_italic';
+	font-size: 13px;
+	text-decoration: none;
+}
+.works-item .works-obzor {
+	font-size: 15px;
+	margin: 5px 0;
+	line-height: 1.2;
+}
+
+/*стили для добавления незагруженного проекта*/
+
+.add-new-work {
+	border: dashed 2px #3ba8c0;
+	border-radius: 4px;
+	height: 127px;
+	text-decoration: none;
+}
+
+.add-new-work .add-new-link {
+	background: url('../img/add_new.png') center 35px no-repeat;
+	display: block;
+	height: 100%;
+	text-decoration: none;
+	color: #3ba8c0;
+	font-size: 12px;
+}
+.add-new-work .add-new-text {
+	position: absolute;
+	padding-top: 75px;
+	text-align: center;
+	width: 100%;
+	bottom: 35px;
+
+}
+
+/*ховер эффекты*/
+.add-new-work .add-new-text:hover {
+	text-decoration: underline;
+}
+
+.add-new-work .add-new-link:hover {
+
+		transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+	-moz-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+}
+
+/*прячем модалное окно - потом достаем с помощью js*/
+
+#img-loader {
+
+display: none;
+}
